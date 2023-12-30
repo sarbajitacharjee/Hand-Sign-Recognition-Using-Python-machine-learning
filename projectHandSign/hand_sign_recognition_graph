@@ -1,0 +1,13 @@
+digraph Hand_Sign_Recognition {
+	OpenCV [label=OpenCV]
+	Mediapipe [label=Mediapipe]
+	Preprocessing [label="Hand Image Preprocessing"]
+	SVM [label="SVM Model"]
+	Display [label=Display]
+	Exit [label=Exit]
+	OpenCV -> Mediapipe
+	Mediapipe -> Preprocessing
+	Preprocessing -> SVM
+	SVM -> Display
+	Display -> Exit
+}
